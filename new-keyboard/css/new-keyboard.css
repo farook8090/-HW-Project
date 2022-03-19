@@ -1,0 +1,168 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: black;
+    color: white;
+    font-family: 'Saira Stencil One', cursive;
+    /* color: #fff; */
+}
+
+.heading {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 7px white,
+        0 0 10px red,
+        0 0 15px red;
+}
+
+.heading img {
+    width: 150px;
+    height: 100px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1140px;
+    height: 55vh;
+    margin: 0 auto;
+    /* background-color: #333; */
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.row {
+    width: 100%;
+    height: 70px;
+    margin-left: 23px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.key {
+    width: 75px;
+    height: 60px;
+    display: flex;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 5px red,
+        0 0 9px red;
+}
+
+#big-image {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px red,
+        0 0 9px red,
+        0 0 15px red;
+    border-radius: 5px;
+}
+
+/* Alphabet keys */
+.tab-key {
+    width: 106px;
+    letter-spacing: 1.2px;
+}
+
+.backspace-key {
+    width: 105px;
+    padding: 0px 12px;
+    letter-spacing: 1.2px;
+}
+
+.capslock-key {
+    width: 117px;
+    letter-spacing: 1.2px;
+}
+
+.right-ctrl-key {
+    letter-spacing: 1.2px;
+}
+
+.enter-key {
+    width: 121px;
+    letter-spacing: 1.2px;
+}
+
+.left-shift-key {
+    width: 141px;
+    letter-spacing: 1.2px;
+}
+
+.right-shift-key {
+    width: 169px;
+    letter-spacing: 1.2px;
+}
+
+.space-key {
+    width: 30.5%;
+    letter-spacing: 1.2px;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow-up {
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.left-ctrl-key {
+    width: 73px;
+    letter-spacing: 1.2px;
+}
+
+.left-alt-key,
+.right-alt-key {
+    letter-spacing: 1.2px;
+}
+
+/*  */
+.image {
+    width: 40%;
+    height: 50vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.small-img {
+    display: none;
+}
+
+
+/* numerical
+.numerical-position {
+    margin-top: 25px;
+    position: absolute;
+    top: 0;
+    right: 92px;
+} */
