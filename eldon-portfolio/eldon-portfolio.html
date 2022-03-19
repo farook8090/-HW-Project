@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/eldon-portfolio.css">
+    <title>Eldon | Portfolio</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Start of Navigation button -->
+
+        <input type="radio" name="images" id="i1" checked>
+        <input type="radio" name="images" id="i2">
+
+        <!-- End of Navigation button -->
+
+        <div class="slider-img" id="one">
+            <img src="img/orion-nebula.jpg" alt="" srcset="">
+
+            <!-- Next and Previous Button -->
+
+            <label for="i2" class="previous">
+                <i class="fa-solid fa-left-long"></i>
+            </label>
+            <label for="i2" class="next">
+                <i class="fa-solid fa-right-long"></i>
+            </label>
+
+        </div>
+
+        <div class="slider-img" id="two">
+            <img src="img/moon.jpg" alt="" srcset="">
+
+            <!-- Next and Previous Button -->
+
+            <label for="i1" class="previous">
+                <i class="fa-solid fa-left-long"></i>
+            </label>
+            <label for="i1" class="next">
+                <i class="fa-solid fa-right-long"></i>
+            </label>
+
+        </div>
+        <div class="nav">
+            <div class="dots" id="dot1" for="i1"></div>
+            <div class="dots" id="dot2" for="i2"></div>
+        </div>
+    </div>
+
+    <header id="header1">
+        <div class="logo">
+            <img src="img/logo.png" alt="" srcset="">
+        </div>
+        <div class="blank">
+
+        </div>
+        <nav class="navbar">
+            <ul class="nav-ul">
+                <li class="nav-list">Home</li>
+                <li class="nav-list">Pages</li>
+                <li class="nav-list">PortFolio</li>
+                <li class="nav-list">About us</li>
+                <li class="nav-list">Contact</li>
+            </ul>
+        </nav>
+        <div class="toggle" id="div-toggle">
+            <input type="checkbox" name="" id="toggle">
+        </div>
+        <div class="side" id="side">
+            <i class="fa-solid fa-bars" onclick="openNav()"></i>
+        </div>
+        <div id="hamburger">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="logo-img">
+                <img src="img/hamburger/sidearea-eldon-img-2.png" alt="">
+            </div>
+            <div class="grid-img">
+                <div class="grid-item1">
+                    <img src="img/hamburger/1.jpg" alt="" srcset="">
+                </div>
+                <div class="grid-item2">
+                    <img src="img/hamburger/2.jpg" alt="" srcset="">
+                </div>
+                <div class="grid-item3">
+                    <img src="img/hamburger/3.jpg" alt="" srcset="">
+                </div>
+                <div class="grid-item4">
+                    <img src="img/hamburger/4.jpg" alt="" srcset="">
+                </div>
+                <div class="grid-item5">
+                    <img src="img/hamburger/5.jpg" alt="" srcset="">
+                </div>
+                <div class="grid-item6">
+                    <img src="img/hamburger/6.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="paragraph">
+                <p>ILLUSTRATION YOU <br></p>
+                <p> YEARNED FOR</p>
+                <br>
+            </div>
+            <div class="size">
+                <p>© 2021 Qode, All Rights Reserved</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Container -->
+
+    <section class="padding">
+        <h1 class="heading">
+            This Is Eldon
+        </h1>
+        <div class="content">
+            <div class="text-container">
+                SHOWCASE <br>
+                YOUR UNIQUE
+                &
+                <br>
+                CREATIVE
+                SIDE
+                <br>
+                WITH US
+            </div>
+            <div class="image">
+                <img src="img/main-h-png2.png" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/0b5094f92b.js" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="js/eldon-portfolio.js"></script>
+</body>
+
+</html>

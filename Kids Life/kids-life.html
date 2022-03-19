@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kids-life.css">
+    <title>Kids Life</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="img/logo.png" alt="" srcset="">
+            </div>
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p class="email">
+                    info@kidsife.com
+                    <i class="fa-solid fa-user"></i>
+                </p>
+                <p class="phone">
+                    +919467671237
+                    <i class="fa-solid fa-phone"></i>
+                </p>
+            </div>
+        </div>
+        <div class="color-container">
+            <div class="color-wrapper">
+                <div class="color-box1"></div>
+                <div class="color-box2"></div>
+                <div class="color-box3"></div>
+                <div class="color-box4"></div>
+            </div>
+
+            <div class="icon-wrapper">
+                <div class="icon-color1"></div>
+                <div class="icon-color2"></div>
+                <div class="icon-color3"></div>
+                <div class="icon-color4"></div>
+            </div>
+        </div>
+        <div class="menu-container">
+            <ul class="menu">
+                <li class="nav-list h">Home</li>
+                <li class="nav-list s">Services</li>
+                <li class="nav-list a">About</li>
+                <li class="nav-list c">Contact</li>
+            </ul>
+            <ul class="icon">
+                <li class="icon-list1">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="icon-list2">
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="icon-list3">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="icon-list4">
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Container-1 -->
+    <section class="section">
+        <!-- id for JS --- to change container-fluid color-->
+        <div class="container-fluid container" id="changeColor">
+            <div class="inner-container" id="inner-container">
+                <div class="picker-container" id="picker-container">
+                    <!-- Flower -->
+                    <div class="flower-box" id="flower" onclick="openNav()" onmouseover="changecolor1()">
+                        <img src="img/picker-icon.png" alt="" srcset="">
+                    </div>
+                    <div class="color-picker">
+                        <h2>SELECT YOUR STYLE</h2>
+                        <h3>CHOOSE YOUR LAYOUT</h3>
+                        <ul class="list">
+                            <li><a href="" id="full-width">
+                                    <img src="img/fullwidth.jpg" alt="" srcset="">
+                                </a></li>
+                            <li><a href="" id="boxed">
+                                    <img src="img/boxed.jpg" alt="" srcset="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="hr"></div>
+                        <h3 class="scheme">
+                            COLOR SCHEME
+                        </h3>
+                        <div class="grid-scheme">
+                            <div class="grid-item1" id="aqua" onclick="changeColor('aqua')">
+                                <img src="img-color/aqua.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item2" id="blue" onclick="changeColor('blue')">
+                                <img src="img-color/blue.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item3" id="burnt-orange" onclick="changeColor('#CC5500')">
+                                <img src="img-color/burnt_orange.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item4" id="chocolate" onclick="changeColor('chocolate')">
+                                <img src="img-color/chocolate.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item5" id="green" onclick="changeColor('green')">
+                                <img src="img-color/green.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item6" id="grey" onclick="changeColor('grey')">
+                                <img src="img-color/grey.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item7" id="lavender" onclick="changeColor('#E6E6FA')">
+                                <img src="img-color/lavender.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item8" id="mustard" onclick="changeColor('#FFDB58')">
+                                <img src="img-color/mustard.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item9" id="ocean" onclick="changeColor('#48bf91')">
+                                <img src="img-color/ocean.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item10" id="orange" onclick="changeColor('orange')">
+                                <img src="img-color/orange.jpg" alt="">
+                            </div>
+                            <div class="grid-item11" id="pearl" onclick="changeColor('#E2DFD2')">
+                                <img src="img-color/pearl.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item12" id="pink" onclick="changeColor('pink')">
+                                <img src="img-color/pink.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item13" id="purple" onclick="changeColor('purple')">
+                                <img src="img-color/purple.jpg" alt="">
+                            </div>
+                            <div class="grid-item14" id="red" onclick="changeColor('red')">
+                                <img src="img-color/red.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item15" id="ruby" onclick="changeColor(' #E0115F')">
+                                <img src="img-color/ruby.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item16" id="steelblue" onclick="changeColor('steelblue')">
+                                <img src="img-color/steelblue.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item17" id="teal" onclick="changeColor('teal')">
+                                <img src="img-color/teal.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item18" id="turquoise" onclick="changeColor('turquoise')">
+                                <img src="img-color/turquoise.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item19" id="violet" onclick="changeColor('violet')">
+                                <img src="img-color/violet.jpg" alt="" srcset="">
+                            </div>
+                            <div class="grid-item20" id="yellow" onclick="changeColor('yellow')">
+                                <img src="img-color/yellow.jpg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Demo -->
+    <div id="demo">
+
+    </div>
+    <!-- BUtton -->
+    <div class="button">
+        <button id="button1">button1</button>
+        <button id="button2">button2</button>
+        <button id="button3">button3</button>
+        <button id="button4">button4</button>
+        <button id="button5">button5</button>
+        <button id="button6">button6</button>
+        <button id="button7">button7</button>
+        <button id="button8">button8</button>
+    </div>
+
+    <div class="hover-element">
+        <p id="paragraph" class="paragraph1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt voluptates minima ut nobis
+            laboriosam aliquam quis sed. Iure aliquid, nostrum eveniet deleniti pariatur laborum perspiciatis voluptas
+            cum officiis aperiam.
+        </p>
+    </div>
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/0b5094f92b.js" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="js/kids-life.js"></script>
+</body>
+
+</html>

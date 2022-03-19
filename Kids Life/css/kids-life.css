@@ -1,0 +1,367 @@
+/* !Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;1,400&family=Saira+Stencil+One&family=Sanchez:ital@0;1&family=Source+Serif+Pro:wght@400;600&display=swap');
+
+/* !Fonts Family */
+/* font-family: 'Crimson Pro', serif;
+font-family: 'Saira Stencil One', cursive;
+font-family: 'Sanchez', serif;
+font-family: 'Source Serif Pro', serif; */
+
+/* & CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Sanchez', serif;
+}
+
+/* Utilities */
+.container-fluid {
+    width: 100%;
+    height: 80vh;
+    background-color: pink;
+}
+
+header {
+    width: 100%;
+    background-color: #785;
+    height: 150px;
+}
+
+.header-container {
+    width: 100%;
+    padding: 25px 0px;
+    /* height: auto; */
+    background: url(../img/header_bg\ \(1\).png) repeat #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 66px;
+}
+
+.contact-info {
+    margin-right: 70px;
+}
+
+.email, .phone {
+    margin-bottom: 9px;
+    font-size: 16px;
+}
+
+/* Color COntainer and its boxes */
+.color-container {
+    width: 100%;
+    height: 5px;
+    display: flex;
+    position: relative;
+}
+
+.color-wrapper {
+    display: flex;
+    /* margin-left: 39%; */
+    position: absolute;
+    top: 0px;
+    left: 354px;
+    color: black;
+}
+
+.color-box1 {
+    width: 70px;
+    height: 5px;
+    background-color: #E33E5A;
+}
+
+.color-box2 {
+    width: 106px;
+    height: 5px;
+    background-color: #ED8A0A;
+}
+
+.color-box3 {
+    width: 84px;
+    height: 5px;
+    background-color: #6807F9;
+}
+
+.color-box4 {
+    width: 98px;
+    height: 5px;
+    background-color: #00BBf0;
+}
+
+/* Li colors */
+.menu .h:hover {
+    color: #E33E5A;
+}
+
+.menu .s:hover {
+    color: #ED8A0A;
+}
+
+.menu .a:hover {
+    color: #6807F9;
+}
+
+.menu .c:hover {
+    color: #00BBf0;
+}
+
+/* end of color */
+.menu-container {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    font-family: 'Saira Stencil One', cursive;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-container .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu .nav-list {
+    font-size: 20px;
+    /* font-weight: 600; */
+    padding: 8px 13px;
+    /* margin: 0px 8px; */
+    border-right: 1px solid gray;
+}
+
+/* Icons */
+.icon {
+    display: flex;
+    list-style: none;
+}
+
+.icon .icon-list1,
+.icon .icon-list2,
+.icon .icon-list3,
+.icon .icon-list4 {
+    font-size: 21px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+.icon .icon-list1 a {
+    color: rgb(56, 56, 233);
+}
+
+.icon .icon-list2 a {
+    color: #dc2743;
+}
+
+.icon .icon-list3 a {
+    color: rgb(56, 238, 56);
+}
+
+.icon .icon-list4 a {
+    color: rgb(24, 157, 209);
+}
+
+/* !Icon Wrapper */
+.icon-wrapper {
+    display: flex;
+    top: 0;
+    right: 347px;
+    position: absolute;
+}
+
+.icon-wrapper .icon-color1 {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(56, 56, 233);
+}
+
+.icon-wrapper .icon-color2 {
+    width: 30px;
+    height: 5px;
+    background-color: #dc2743;
+}
+
+.icon-wrapper .icon-color3 {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(56, 238, 56);
+}
+
+.icon-wrapper .icon-color4 {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(24, 157, 209);
+}
+
+/* Container-1 */
+.section {
+    margin-top: 17px;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/bg2.jpg);
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.inner-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Slide Color Changer */
+.picker-container {
+    display: inline-block;
+    width: 270px;
+    height: 362px;
+    background-color: white;
+    position: fixed;
+    top: 270px;
+    left: -270px;
+    transition: all 0.6s;
+}
+
+.flower-box {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 24px;
+    left: 270px;
+}
+
+.flower-box img {
+    animation: spin 4s infinite linear;
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    margin: 0 auto;
+}
+
+.color-picker {
+    width: 100%;
+    height: 100%;
+}
+
+.color-picker h2 {
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.color-picker h3 {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.list a img {
+    display: inline-block;
+}
+
+.list #full-width {
+    margin-left: 54px;
+    margin-right: 23px;
+}
+
+.hr {
+    width: 100%;
+    height: 25px;
+    background: url(../img/seperator.png) repeat 26px;
+}
+
+/* Color Scheme */
+.grid-scheme {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 30px);
+    grid-template-rows: repeat(4, 30px);
+    margin-left: 37px;
+}
+
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4,
+.grid-item5,
+.grid-item6,
+.grid-item7,
+.grid-item8,
+.grid-item9,
+.grid-item10,
+.grid-item11,
+.grid-item12,
+.grid-item13,
+.grid-item14,
+.grid-item15,
+.grid-item16,
+.grid-item17,
+.grid-item18,
+.grid-item19,
+.grid-item20 {
+    border: 1px solid black;
+}
+
+
+.grid-scheme img {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+
+/* Demo */
+#demo {
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.button {
+    margin-left: 250px;
+    margin-top: 25px;
+}
+
+button {
+    margin: 0 auto;
+    width: 60px;
+    height: 30px;
+    background-color: aqua;
+    /* margin-left: 10px; */
+}
+
+.hover-element {
+    padding: 10px 80px;
+}
+
+.paragraph1:hover {
+    color: black;
+}
