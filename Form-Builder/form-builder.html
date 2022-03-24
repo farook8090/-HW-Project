@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/form-builder.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form Builder</title>
+</head>
+
+<body>
+    <!-- Start of NavBar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img src="img/fb-logo.svg" alt="" srcset="">
+            <h1 class="brand">formBuilder</h1>
+            <em style="margin-left: 10px;">v3.8.0</em>
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Docs</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Downloads</a>
+                    <div class="dropdown-menu">
+
+                        <ul class="bold">
+
+                            <!-- Distribution -->
+                            <li class="dropdown-item font-weight-bold">Distribution</li>
+                            <ul>
+                                <li><a class="dropdown-item small" href="#">FORMBUILDER.ZIP</a></li>
+                                <li><a class="dropdown-item small" href="#">FORMBUILDER.TAR.GZ</a></li>
+                            </ul>
+
+
+                            <!-- Sources -->
+                            <li class="dropdown-item font-weight-bold">Source</li>
+                            <ul>
+                                <li><a class="dropdown-item small" href="#">FORMBUILDER.ZIP</a></li>
+                                <li><a class="dropdown-item small" href="#">FORMBUILDER.TAR.GZ</a></li>
+                                <li><a class="dropdown-item small" href="#">GITHUB</a></li>
+                            </ul>
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- End of NavBar -->
+
+    <!-- Section-1 -->
+    <main class="content-wrap">
+        <div class="animated-tagline">
+
+            <h1 class="heading">
+                <span data-aos="fade-left" data-aos-delay="600" data-aos-duration="400"> DRAG</span>
+                <span data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="500"> AND</span>
+                <span data-aos="fade-up" data-aos-delay="1400" data-aos-duration="600"> DROP</span>
+            </h1>
+            <h3 class="tagline full-featured">
+                <span class="light" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500"><span> Full
+                        Featured</span> Form
+                    Editing</span>
+            </h3>
+
+        </div>
+        <div class="container">
+            <select class="selectpicker">
+                <option>English(US)</option>
+                <option>Spanish</option>
+                <option>Hindi</option>
+            </select>
+        </div>
+        <section class="main-content">
+            <div class="drop-area" ondragover="onDragOver(event)" ondrop="onDrop(event)" id="drop-area">
+                <ul data-content="Drag a field from the right to this area"></ul>
+            </div>
+            <div class="drag-area">
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item auto-complete" draggable="true" ondragstart="onDragStart(event)"
+                        id="auto-complete" data-input="<input type='text'">
+                        <!-- After mentioning this draggable the element is now draggable -->
+                        <span>Auto Complete</span>
+                    </li>
+                    <li class="list-group-item button" draggable="true" ondragstart="onDragStart(event)" id="button"
+                        data-input="<input type='button'>">
+                        <span>Button</span>
+                    </li>
+                    <li class="list-group-item checkbox-group" draggable="true" ondragstart="onDragStart(event)"
+                        id="checkbox-grp" data-input="<input type='checkbox'>">
+                        <i class="fa-solid fa-square-check"></i>
+                        <span> Checkbox group</span>
+                    </li>
+                    <li class="list-group-item date-field" draggable="true" ondragstart="onDragStart(event)"
+                        id="date-feild" data-input="<input type='date'>">
+                        <i class="fa-solid fa-calendar-circle-plus"></i>
+                        <span> Date-field</span>
+                    </li>
+                    <li class="list-group-item file-upload" draggable="true" id="file-upload"
+                        data-input="<input type='file'>" ondragstart="onDragStart(event)">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                        <span>File-upload</span>
+                    </li>
+                    <li class="list-group-item header" draggable="true" id="header" data-input="header"
+                        ondragstart="onDragStart(event)">
+                        <i class="fa-solid fa-heading"></i>
+                        <span>Header</span>
+                    </li>
+                    <li class="list-group-item hidden-input" draggable="true" id="hidden-input"
+                        data-input="<input type='hidden'>" ondragstart="onDragStart(event)">
+                        <span>Hidden input</span>
+                    </li>
+                    <li class="list-group-item number" draggable="true" id="number" data-input="<input type='number'>"
+                        ondragstart="onDragStart(event)">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <span>Number</span>
+                    </li>
+                    <li class="list-group-item paragraph" draggable="true" id="paragraph"
+                        data-input="<input type='text'>" ondragstart="onDragStart(event)">
+                        <i class="fa-solid fa-paragraph"></i>
+                        <span>Paragraph</span>
+                    </li>
+                    <li class="list-group-item radio-group" draggable="true" id="radio"
+                        data-input="<input type='radio'>" ondragstart="onDragStart(event)">
+                        <i class="fa-solid fa-list-radio"></i>
+                        <span>Radio Group</span>
+                    </li>
+                    <li class="list-group-item select" draggable="true" id="select" data-input="select"
+                        ondragstart="onDragStart(event)">
+                        <i class="fa-solid fa-ballot-check"></i>
+                        <span>Select</span>
+                    </li>
+                    <li class="list-group-item text-filed" draggable="true" data-input="<input type='text'>"
+                        ondragstart="onDragStart(event)" id="text-field">
+                        <i class="fa-solid fa-input-text"></i>
+                        <span>Text Field</span>
+                    </li>
+                    <li class="list-group-item text-area" draggable="true" id="text-area"
+                        data-input="<input type='text'>" ondragstart="onDragStart(event)">
+                        <span>Text area</span>
+                    </li>
+                </ul>
+                <!-- Button -->
+                <div class="btn-group float-right mt-1">
+                    <button type="button" class="btn btn-danger ml-0">Clear</button>
+                    <button type="button" class="btn btn-dark">[{...}]</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+                <!-- End of Button -->
+            </div>
+        </section>
+    </main>
+    <!-- End of Section-1 -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- JS link -->
+    <script src="js/form-builder.js"></script>
+    <!-- Animation Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/0b5094f92b.js" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

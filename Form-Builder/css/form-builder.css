@@ -1,0 +1,177 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500&family=Saira+Stencil+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9852F9;
+    font-size: 20px;
+    color: black;
+    font-family: 'Red Hat Mono', monospace;
+    /* font-family: 'Saira Stencil One', cursive; */
+    width: 100%;
+    background-image: url(../img/demo-background.svg), linear-gradient(to bottom, #000, #92278F);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li, ul {
+    list-style: none;
+}
+
+body>nav>a>img {
+    width: 45px;
+}
+
+body>nav>a>h1 {
+    font-size: 1.5rem;
+}
+
+body>nav>a>em {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-left: 150px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+#collapsibleNavbar {
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.brand {
+    margin-left: 15px;
+}
+
+.full-featured .light {
+    font-weight: lighter;
+}
+
+/*Main */
+.animated-tagline {
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.animated-tagline h1 {
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.animated-tagline h3 {
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.animated-tagline h3 span {
+    font-weight: 600;
+}
+
+.main-content {
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    /* background-color: red; */
+    margin-top: 45px;
+}
+
+.drop-area {
+    width: 78%;
+    height: 85vh;
+    background-color: rgba(255, 255, 255, .25);
+    border: 3px dotted #ccc;
+}
+
+.drag-area {
+    width: 22%;
+    height: 85vh;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 7px;
+}
+
+.drag-area ul {
+    font-size: 15px;
+}
+
+.drop-area ul::after {
+    content: attr(data-content);
+    position: absolute;
+    top: 78%;
+    right: 127px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.drag-area ul li {
+    cursor: move;
+}
+
+body>main>section>div.drag-area>div>button.btn.btn-dark {
+    width: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.selectpicker {
+    float: right;
+    padding: 10px 16px;
+    margin: 0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* After Dropping the Element following CSS gets applied. */
+#drop-area>input[type="text"] {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+#drop-area>input[type="button"] {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+#drop-area>input[type="checkbox"] {
+    width: 100%;
+}
+
+#drop-area>input[type="date"] ,
+#drop-area > input[type="file"],
+#drop-area > input[type="number"],
+#drop-area > input[type="radio"]::before{
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 7px;
+}
